@@ -1,15 +1,7 @@
-<!DOCTYPE html> 
 {% load static %}
-<html lang="ru"> 
-  <head>    
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/fav/fav.ico" type="image">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>
-      {% block title %}{% endblock %}
-    </title>
-  </head>
+<!DOCTYPE html> 
+<html lang="ru">
+  {% include "includes/head.html" %}
   <body>
     {% include "includes/header.html" %}
     <main class="pt-5 my-5">       
@@ -20,6 +12,6 @@
     </main>
     {% include "includes/footer.html" %}   
   </body>
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </html>

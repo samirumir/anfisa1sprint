@@ -1,3 +1,4 @@
+{% load static %}
 {% extends "base.html" %}
 {% block title %}
   Анфиса для друзей. Каталог мороженого
@@ -28,7 +29,7 @@
           <img 
             class="img-fluid card-img-top" 
             height="400" width="300"
-            src="img/image-holder.png"
+            src="{% static 'img/image-holder.png' %}"
           >
           <div class="card-body">           
             <h5 class="card-title">Классический пломбир</h5>
@@ -50,7 +51,7 @@
           <img 
             class="img-fluid card-img-top" 
             height="400" width="300"
-            src="img/image-holder.png"
+            src="{% static 'img/image-holder.png' %}"
           >
           <div class="card-body">           
             <h5 class="card-title">Мороженое с кузнечиками</h5>
@@ -72,7 +73,7 @@
           <img 
             class="img-fluid card-img-top" 
             height="400" width="300"
-            src="img/image-holder.png"
+            src="{% static 'img/image-holder.png' %}"
           >
           <div class="card-body">           
             <h5 class="card-title">Мороженое со вкусом сыра чеддер</h5>
